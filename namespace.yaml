@@ -2,8 +2,5 @@ apiVersion: v1
 kind: Namespace
 metadata:
   name: lab5
-spec:
-  hard:
-    pods: "10"
-    limits.cpu: "2000m"
-    limits.memory: 1.5Gi
+  labels:
+    name: lab5
