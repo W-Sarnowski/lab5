@@ -21,3 +21,9 @@ Step 4:
 - result:
 
 ![image](https://github.com/W-Sarnowski/lab5/assets/32043288/eb41ee2c-3565-4eaa-85a5-3b58042d1d63)
+
+Step 5:
+- create hpa for php-apache from ```scaler.yaml``` file
+- result:
+
+![image](https://github.com/W-Sarnowski/lab5/assets/32043288/9f82d055-3a99-48d5-9a8b-1bcf4a319d16)
