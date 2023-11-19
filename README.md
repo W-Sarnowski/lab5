@@ -24,6 +24,12 @@ Step 4:
 
 Step 5:
 - create hpa for php-apache from ```scaler.yaml``` file
+- maxReplicas was set to 5 to prevent overflowing resources (it could technicly fit 6 since 1.5G/250M=6 but 5 is safer)
 - result:
 
 ![image](https://github.com/W-Sarnowski/lab5/assets/32043288/9f82d055-3a99-48d5-9a8b-1bcf4a319d16)
+
+Step 6:
+- run the following comamnds in 2 termianls:
+- ```kubectl run -i --tty load-generator --rm --image=busybox:1.28 --restart=Never -- /bin/sh -c "while sleep 0.01; do wget -q -O- php-apache.zad4.svc.cluster.local:80; done"```
+- ```kubectl get hpa --watch```
