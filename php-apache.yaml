@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: php-apache
-  namespace: zad4
+  namespace: lab5
 spec:
   selector:
     matchLabels:
